@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Hello, World!</title>
-</head>
-<body>
-    <h1>Igor Hajdukov, Back-end developer</h1>
-    <h2>About me</h2>
-    <img src="pictures/avatar.jpg">
-    <p>Hi, I`m Igor Hajdukov. I`ve been a junior back-end developer for 6 months now.<br>
-    For me, programming is not just a  job, it`s a hobby.<br>
-    I`m open to new knowledge, I like to study new technologies and apply them in practice.<br>
-    <strong>Skills:</strong> Java, HTML, CSS, JS
-    </p>
-    <h2>Portfolio</h2>
-    <img class="project" src="pictures/project%231.jpg">
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, World!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <h1>Igor Hajdukov, Back-end developer</h1>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About me</h2>
+            <img src="pictures/avatar.jpg">
+            <p>Hi, I`m Igor Hajdukov. I`ve been a junior back-end developer for 6 months now.<br>
+            For me, programming is not just a  job, it`s a hobby.<br>
+            I`m open to new knowledge, I like to study new technologies and apply them in practice.<br>
+            <strong>Skills:</strong> Java, HTML, CSS, JS
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <img class="project" src="pictures/project%231.jpg">
+        </section>
+
+        <footer>
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <p>You can contact me at <a href="https://mail.google.com/">ihor.gajdukov@gmail.com</a>
+                    or social networks
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100013868659735">
+                    <img class="ico" src="pictures/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/haidukoff/?hl=uk">
+                    <img class="ico" src="pictures/instagram.jpg">
+                </a>
+                <a href="https://www.linkedin.com/in/%D0%B8%D0%B3%D0%BE%D1%80%D1%8C-%D0%B3%D0%B0%D0%B9%D0%B4%D1%83%D0%BA%D0%BE%D0%B2-38a1641b9/">
+                    <img class="ico" src="pictures/linkedin.png">
+                </a>
+                <p>Igor Hajdukov, 2021</p>
+            </section>
+        </footer>
+
+    </body>
 </html>
