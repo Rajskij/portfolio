@@ -2,25 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Hello, World!</title>
+        <title>Back-end developer portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script defer src="script.js"></script>
     </head>
     <body>
 
         <header>
             <nav>
-                <ul>
+                <ul type="none">
                     <li><a href="#about">About me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
-                <h1>Igor Hajdukov, Back-end developer</h1>
             </nav>
+            <h1>Igor Hajdukov,<br> Back-end developer</h1>
         </header>
 
         <section id="about">
-            <h2>About me</h2>
+            <h2>ABOUT</h2>
             <img src="pictures/avatar.jpg">
+            <h3>About me</h3>
             <p>Hi, I`m Igor Hajdukov. I`ve been a junior back-end developer for 6 months now.<br>
             For me, programming is not just a  job, it`s a hobby.<br>
             I`m open to new knowledge, I like to study new technologies and apply them in practice.<br>
@@ -29,8 +36,22 @@
         </section>
 
         <section id="portfolio">
-            <h2>Portfolio</h2>
-            <img class="project" src="pictures/project%231.jpg">
+            <h2>PORTFOLIO</h2>
+            <div class="window">
+                <h3>Flashcards</h3><br>
+                <p>You can see the project at the following link:
+                    <a href="https://github.com/Rajskij/flashcards">flashcards</a>
+                </p><br>
+                <p>I did this project when I was studing the frontend on HyperSkill.
+                    I created a wev page with flip-down flash cards, learned some HTML basics
+                and learned that CSS can easily make a beautiful design.</p>
+                <button data-close-button>Close</button>
+            </div>
+            <div class="portfolio-info">
+                <h3>Flashcards project</h3>
+                <img class="project" src="pictures/project%231.jpg">
+                <button data-modal-target=".window" class="open-window">Press to learn more about project</button>
+            </div>
         </section>
 
         <footer>

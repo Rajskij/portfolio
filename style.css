@@ -1,3 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: cornsilk;
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+header {
+    background-image: url("pictures/sunset.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+nav {
+    width: 100vw;
+    background-color: #1d2f39;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+ul {
+    overflow: hidden;
+}
+li {
+    float: right;
+}
+li a {
+    font-size: 30px;
+    padding: 20px 40px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+h1 {
+    position: absolute;
+    top: 750px;
+    left: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: left;
+    z-index: -1;
+}
+#about {
+    height: 80vh;
+    background-color: lightgrey;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about h2 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    background-color: #1d2f39;
+    top: 0;
+    width: 100vw;
+}
+#about img {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 500px;
+    border: solid 1px #422d34;
+    border-radius: 25px;
+}
+#about h3 {
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    color: #422d34;
+}
+#about p {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    width: 500px;
+    text-align: left;
+    font-size: 20px;
+    color: #422d34;
+}
+#portfolio{
+    position: relative;
+    height: 1000px;
+    background-color: #5a5f62;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio h2 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    background-color: #1d2f39;
+    top: 0;
+    width: 100vw;
+}
+.window {
+    width: 600px;
+    color: dimgrey;
+    padding: 20px;
+    position: absolute;
+    background-color: whitesmoke;
+    border: solid #422d34 2px;
+    border-radius: 5px;
+    z-index: 3;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+}
+.window.active {
+    transform: scale(1);
+}
+.window button {
+    color: white;
+    background-color: #1d2f39;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+}
+.portfolio-info {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    background-color: #1d2f39;
+}
+.portfolio-info h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+#portfolio img {
+
+}
+.open-window {
+    color: whitesmoke;
+    background: #1d2f39;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+#contacts {
+    position: relative;
+    color: white;
+    background-color: #1d2f39;
+    overflow: hidden;
+}
+#contacts p {
+    margin: 20px;
+}
 .ico {
     height: 50px;
     width: 50px;
