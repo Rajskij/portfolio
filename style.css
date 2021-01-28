@@ -26,6 +26,10 @@ nav {
     justify-content: flex-end;
     align-content: center;
 }
+.hamburger {
+    height: 60px;
+    visibility: hidden;
+}
 ul {
     overflow: hidden;
 }
@@ -115,7 +119,7 @@ h1 {
     position: absolute;
     background-color: whitesmoke;
     border: solid #422d34 2px;
-    border-radius: 5px;
+    border-radius: 25px;
     z-index: 3;
     transform: scale(0);
     transition: 200ms ease-in-out;
@@ -167,4 +171,19 @@ h1 {
 .ico {
     height: 50px;
     width: 50px;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+@media screen and (max-width: 900px){
+    .hamburger {
+        margin: 15px 30px;
+        height: 55px;
+        filter: invert(100%);
+        cursor: pointer;
+        visibility: visible;
+    }
+    ul {
+        overflow: hidden;
+        display: none;
+    }
 }
